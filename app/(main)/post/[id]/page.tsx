@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { getPost } from '@/lib/queries'
 import { auth } from '@/lib/auth'
 
-export const revalidate = 60 * 15 // 15 min
+export const revalidate = 900 // 15 min
 
 export default async function PostPage({
   params,
